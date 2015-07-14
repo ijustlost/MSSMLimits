@@ -134,7 +134,7 @@ def draw_blob(rf, number, model):
     if cut_p2s:
         cut_p2s.SetFillColor(R.kWhite)
         print model
-        if model=="tauphobic" and number==1: 
+        if model=="tauphobic_at" and number==1: 
             cut_p2s.SetFillColor(R.kGreen)
         if (model=="lightstau") and number==1:
             pass
@@ -261,7 +261,8 @@ draw("root-files/mhmodm.root", "mhmodm", "mhmod-", 140, mmax, mintb, maxtb, [0,1
 draw("root-files/lightstau.root", "lightstau", "Light Stau", 140, mmax, mintb, maxtb)
 draw("root-files/lightstop.root", "lightstop", "Light Stop", 140, mmax, mintb, maxtb)
 draw("root-files/hmssm.root", "hMSSM", "hMSSM", 160, mmax, mmax, maxtb)
-draw("root-files/tauphobic.root", "tauphobic", "#tau-phobic", 140, mmax, 0.99, maxtb)
+draw("root-files/tauphobic_0.root", "tauphobic_0", "#tau-phobic A_{#tau}=0", 140, mmax, 0.99, maxtb)
+draw("root-files/tauphobic_at.root", "tauphobic_at", "#tau-phobic A_{#tau}=A_{t}", 140, mmax, 0.99, maxtb)
 draw("root-files/mhmodp.root", "mhmodp", "mhmod+", 140, mmax, mintb, maxtb)
 
 
